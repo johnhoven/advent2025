@@ -1,0 +1,22 @@
+# Byte-code files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Editor/IDE-specific files
+.idea/  # For PyCharm/IntelliJ
+.vscode/ # For VS Code (uncomment if you want to ignore the whole folder)
+
+# Miscellaneous
+*.log
+.pypirc
+.ruff_cache/
+
+# Advent
+aoc/
+
+test_*.py
