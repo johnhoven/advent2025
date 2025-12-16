@@ -1,3 +1,7 @@
 def getLines(fileName):
     with open('aoc/' + fileName , 'r') as file:
-        return file.readlines()
+        linesCleaned = []
+        for line in file.readlines():
+            line = line.replace("\n", "")
+            linesCleaned.append(line)
+        return linesCleaned
