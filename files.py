@@ -13,3 +13,11 @@ def getLinesAsCharArrays(fileName):
             line = line.replace("\n", "")
             linesCleaned.append(list(line))
         return linesCleaned
+    
+def getLinesSplit(fileName):
+    with open('aoc/' + fileName , 'r') as file:
+        linesCleaned = []
+        for line in file.readlines():
+            line = line.replace("\n", "")
+            linesCleaned.append(line.split(None))
+        return linesCleaned
